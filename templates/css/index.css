@@ -1,0 +1,86 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    display: block;
+    /*将a变成块状*/
+    width: 224px;
+    /*设置块的宽度*/
+    height: 50px;
+    /*设置块的长度*/
+    font-family: Microsoft Yahei;
+    line-height: 50px;
+    /*设置字体在块中的高度*/
+    background-color: #3d99bd;
+    margin: 0px 0px;
+    /*块里的高宽通过margin设置*/
+    color: rgb(0, 0, 0);
+    text-align: center;
+    /*字体居中*/
+    text-decoration: none;
+    /*去掉下划线*/
+    font-size: 18px;
+}
+
+a:hover {
+    background-color: #51c7c7;
+}
+
+.top-nev {
+    margin: 10px 160px 10px 160px;
+    background-color: rgb(255, 255, 255);
+}
+
+.turn {
+    display: inline-block;
+}
+
+#lunbotu {
+    width: 1226px;
+    height: 460px;
+    overflow: hidden;
+    position: relative;
+    margin: 0px auto;
+    position: relative;
+}
+
+#banner {
+    height: 460px;
+    width: 6130px;
+    position: absolute;
+    transition: 2s;
+    left: 0px;
+}
+
+#banner img {
+    float: left;
+}
+
+#biao {
+    position: absolute;
+    top: 430px;
+    left: 43%;
+}
+
+#biao_1 {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #000;
+    z-index: 10;
+    float: left;
+    list-style: none;
+    border-radius: 50%;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.remenxuanke {
+    margin: 10px 0;
+}
+
+.rementupian {
+    display: inline;
+}

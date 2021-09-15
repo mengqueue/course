@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.js"></script>
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+
+    <div class="top-nev">
+
+        <div class="turn">
+            <a href=""><span>首页</a>
+        </div>
+
+        <div class="turn">
+            <a href=""><span>所有选课</a>
+        </div>
+
+        <div class="turn">
+            <a href=""> <span>二手书店</a>
+            </div>
+            <div class="turn">
+                <a href=""><span>关于我们</a>
+            </div>
+            <div class="turn">
+                <a href="个人中心.html"><span>个人中心</a>
+
+            </div>
+
+        <div id="lunbotu">
+            <div id="banner">
+                <img class="m" src="../../static/pic/course/Ajax.jpg" />
+                <img class="m" src="../../static/pic/course/Ajax.jpg" />
+                <img class="m" src="../../static/pic/course/Ajax.jpg" />
+                <img class="m" src="../../static/pic/course/Ajax.jpg" />
+                <img class="m" src="../../static/pic/course/Ajax.jpg" />
+            </div>
+            <div id="biao">
+                <ul>
+                    <li id="biao_1">1</li>
+                    <li id="biao_1">2</li>
+                    <li id="biao_1">3</li>
+                    <li id="biao_1">4</li>
+                    <li id="biao_1">5</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="remenxuanke">热门选课</div>
+
+     <div>
+            <a class="rementupian" href=" https://www.php.cn/div-tutorial-417019.html "><span><img src="../../static/pic/course/python3入门机器学习.png" ></span></a>
+            <a class="rementupian" href=" https://www.php.cn/div-tutorial-417019.html "><span><img src="../../static/pic/course/python3入门机器学习.png" ></span></a>
+            <a class="rementupian" href=" https://www.php.cn/div-tutorial-417019.html "><span><img src="../../static/pic/course/python3入门机器学习.png" ></span></a>
+            <a class="rementupian" href=" https://www.php.cn/div-tutorial-417019.html "><span><img src="../../static/pic/course/python3入门机器学习.png" ></span></a>
+            <a class="rementupian" href=" https://www.php.cn/div-tutorial-417019.html "><span><img src="../../static/pic/course/python3入门机器学习.png" ></span></a>
+            <a class="rementupian" href=" https://www.php.cn/div-tutorial-417019.html "><span><img src="../../static/pic/course/python3入门机器学习.png" ></span></a>
+        </div>
+
+    </div>
+
+</body>
+<script type="text/javascript">
+    var slid = document.getElementById("banner");
+    //var id = document.getElementById("bt");
+    var imgwidth = document.getElementsByClassName("m");
+    var oli = document.getElementsByTagName("li");
+    //console.log(oli);
+    //console.log(imgwidth );
+    var i = 0;
+    auto();
+    oli[0].style.cssText = "background:#ff6700;color:#fff;";
+
+    function auto() {
+
+
+        time = setInterval(function() {
+            i++;
+            if (i <= 4) {
+                slid.style.left = slid.offsetLeft - 1226 + "px";
+                oli[i].style.cssText = "background:#ff6700;color:#fff;";
+                oli[i - 1].style.cssText = "background:none;color:#000;";
+            } else {
+                slid.style.left = "0px";
+                oli[4].style.cssText = "background:none;color:#000;";
+                oli[0].style.cssText = "background:#ff6700;color:#fff;";
+                i = 0;
+            }
+            console.log(i);
+
+
+        }, 3000)
+
+
+    }
+
+
+    for (var j = 0; j <= 4; j++) {
+        //console.log(imgwidth[j].index);
+        imgwidth[j].index = j;
+        oli[j].index = j;
+        oli[j].onmouseover = function() {
+            this.style.cssText = "background:#ff6700;color:#fff;"
+            this.onmouseout = function() {
+                this.style.cssText = "background:none;color:#000;"
+            }
+        }
+
+
+        oli[j].onclick = function() {
+            clearInterval(time);
+            m = this.index;
+            slid.style.left = -m * 1226 + "px";
+            i = m;
+            auto();
+            console.log(i);
+        }
+    }
+</script>
+
+</html>

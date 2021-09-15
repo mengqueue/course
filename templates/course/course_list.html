@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course_List</title>
+</head>
+<body>
+
+{% if courses %}
+    {% for course in courses %}
+        <a>{{ course.cname }}</a>
+        <li>{{ course.cintroduce }}</li>
+        <li>---------------------------------------</li>
+    {% endfor %}
+
+{% endif %}
+
+</body>
+</html>

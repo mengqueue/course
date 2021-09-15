@@ -1,0 +1,37 @@
+.page{
+    background-color:gray;
+    width:96%;
+    /*块状元素居中对齐*/
+    margin:auto;
+    margin-top:20px;
+    height:auto;
+}
+.page .top{
+    height:80px;
+    display:flex;
+    background-color:navajowhite;
+}
+.page .top .left{
+    width:200px;
+    background-color:firebrick;
+}
+.page .top .middle{
+    flex:1;
+    background-color: darkgoldenrod;
+}
+.page .top .right{
+    width:400px;
+    background-color:blueviolet;
+}
+.page .navigation{
+    height:50px;
+    background-color:greenyellow;
+}
+.page .body{
+    height:auto;
+    background-color:white;
+}
+.page .bottom{
+    height:150px;
+    background-color:grey;
+}

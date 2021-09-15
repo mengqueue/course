@@ -1,0 +1,218 @@
+.page{
+    width:96%;
+    /*块状元素居中对齐*/
+    margin:auto;
+    margin-top:20px;
+    height:auto;
+    background-color: whitesmoke;
+}
+.header{
+    height:90px;
+    display:flex;
+    background-color: skyblue;
+    /*border-bottom:5px solid blue;*/
+}
+.header .web-logo{
+    width:300px;
+}
+.header .web-logo .logo{
+    width:100px;
+    height:80px;
+}
+.header .web-logo .web-name{
+    font-family:华文行楷;
+    color:white;
+    font-size:38px;
+    font-weight:bolder;
+}
+
+
+.header .search{
+    margin-top:10px;
+    flex:1;
+}
+.header .search span{
+    margin-left:10px;
+}
+.header .search .input{
+    border-radius:25px;
+    width:300px;
+    height:30px;
+    margin-left:160px;
+}
+
+
+.header .navigation{
+    width:400px;
+    display:inline;
+    margin-top:10px;
+}
+.header .navigation li{
+    list-style:none;
+    /*不换行横行并排显示*/
+    /*display:inline;*/
+    float:left;
+    margin-right:10px;
+    font-size:24px;
+    font-weight:bolder;
+    font-family:隶书;
+    color:darkblue;
+}
+
+.system-course{
+    height:auto;
+    display:flex;
+}
+.system-course .course-list{
+    margin-top:10px;
+    width:600px;
+    overflow:hidden;
+    /*文本溢出显示省略号*/
+    text-overflow:ellipsis;
+    /*文本不会换行*/
+    white-space:nowrap;
+    background-color: #cccccc;
+}
+
+/*超链接统一去掉下划线*/
+.system-course .course-list a{
+    text-decoration:none;
+    font-family:楷体;
+    color:black;
+    font-size:18px;
+    line-height:1.5;
+}
+.system-course .course-list a:active{
+    color:darkslategray;
+    font-weight:bolder;
+}
+.system-course .course-list a:visited{
+    color:gray;
+}
+
+
+
+.system-course .course-detail{
+    background-color: white;
+}
+.course-detail .course-body{
+    margin-left:20px;
+    margin-top:10px
+}
+.course-body .evolution{
+    background-color:lightgray;
+    height:30px;
+}
+.evolution span{
+    float:right;
+    font-size:16px;
+    margin-right:40px;
+    margin-top:5px;
+}
+.evolute span{
+    float:right;
+    font-size:16px;
+    margin-right:40px;
+    margin-bottom:5px;
+}
+h2{
+    font-size:30px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+h3{
+    font-size:22px;
+    font-weight:550;
+    margin-top:40px;
+}
+.my-study{
+    height:100px;
+    margin:auto;
+    background-color: bisque;
+}
+.my-study .progress{
+    margin-left:10px;
+    margin-bottom:20px;
+    width:80%;
+}
+h4{
+    font-size:25px;
+    font-weight:550;
+    margin-top:60px;
+    margin-bottom:20px;
+    margin-left:10px;
+}
+
+.course-recommended{
+    height:auto;
+}
+.course-recommended .course-list li{
+    list-style:none;
+    /*不换行横行并排显示*/
+    display:inline;
+    margin-right:40px;
+}
+.image{
+    height:190px;
+    width:250px;
+}
+.job-recommended{
+    height:auto;
+}
+
+h5{
+    font-size:18px;
+    font-weight:550;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:10px;
+}
+h6{
+    font-size:14px;
+    font-weight:550;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:10px;
+}
+p{
+    font-size:14px;
+    line-height:1.5;
+    margin-left:40px;
+}
+.footer{
+    margin-top:50px;
+    height:150px;
+    font-family:consolas,微软雅黑,Arial,sans-serif;
+    background-color:lightgrey;
+}
+.footer .more{
+    width:800px;
+    background-color:gold;
+}
+.footer .more li{
+    margin-top:80px;
+    list-style:none;
+    /*不换行横行并排显示*/
+    float:left;
+    margin-right:25px;
+    font-size:15px;
+    color:dimgrey;
+
+}
+.footer .contact{
+    margin-right:80px;
+    float:right;
+}
+.footer .contact div{
+    width:66px;
+    float:left;
+    margin-right:30px;
+    margin-top:40px;
+    font-size:12px;
+    text-align:center;
+    color:dimgrey;
+}
+.footer .contact .icon{
+    width:30px;
+    height:40px;
+}
